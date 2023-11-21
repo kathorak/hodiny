@@ -1,0 +1,23 @@
+.vlajka {
+    margin: 300px 0px 0px 300px;
+}
+
+.black {
+    display: inline-block;
+    width: 200px;
+    height: 500px;
+    background-color: black;
+}
+
+.red {
+    display: inline-block;
+    width: 200px;
+    height: 500px;
+    background-color: red;
+}
+.yellow {
+    display: inline-block;
+    width: 200px;
+    height: 500px;
+    background-color: yellow;
+}

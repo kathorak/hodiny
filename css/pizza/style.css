@@ -1,0 +1,36 @@
+@import url(https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap);
+
+/* použij pro všechno */
+*{ 
+    box-sizing: border-box;
+    font-family: "Merrieweather, serif"
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* em zvětšení v poměru */
+
+nav {
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.nav li{
+    display: inline-block;
+    padding: 0 5%;
+    font-weight: bold;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.main-header {
+    font-size: 4.5vw;
+}

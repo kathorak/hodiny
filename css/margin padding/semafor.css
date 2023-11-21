@@ -1,0 +1,7 @@
+.black {
+    display: inline-block;
+    border-radius: 100%;
+    width: 100px;
+    height: 200px;
+    padding: 10px;
+}

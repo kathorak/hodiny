@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+        <title>Hadej</title>
+        <h1>Hádej nebo něco</h1>
+        <input type="text" id="input" />
+        <button id="button">Hádání</button>
+        <h2 id="hadani">_ _ _</h2>
+
+        <script>
+            let input = document.querySelector("#input")
+            let button = document.querySelector("#button")
+            let hadani = document.querySelector("#hadani")
+            let slovo = "pes"
+            button.addEventListener("click", pridaniPismenka)
+
+            function pridaniSlova() {
+                hadani.innerText = ""
+                for (let i = 0; i < slovo.length; i++) {
+                    if (slovo[i] === input.value[i]) {
+                        hadani.innerText += slovo[i]
+                    } else {
+                        hadani.innerText += " _"
+                    }
+                }
+            }
+
+            function pridaniPismenka() {}
+        </script>
+    </body>
+</html>

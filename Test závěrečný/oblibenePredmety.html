@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Předměty</title>
+</head>
+<body>
+    
+    <h1>Oblíbené předměty</h1>
+    <h2>Zadej předmět:</h2>
+
+    <input type="text" id="input">
+    <button id="slovo">Přidej předmět</button>
+    <button id="roztrid">Roztřiď</button>
+
+    <h3>Předměty:</h3>
+    <p id="text"></p>
+
+    <h3>Oblíbené předměty:</h3>
+    <p id="text_oblibene"></p>
+
+    <h3>Ostatní předměty:</h3>
+    <p id="text_ostatni"></p>
+
+    <script>
+
+        let text = document.querySelector("#text")
+        let text_oblibene = document.querySelector("#text_oblibene")
+        let text_ostatni = document.querySelector("#text_ostatni")
+        let slovo = document.querySelector("#slovo")
+        let roztrid = document.querySelector("#roztrid")
+        let input = document.querySelector("#input") 
+
+        const predmety = []
+        const oblibene = []
+        const ostatni = []
+
+        slovo.addEventListener("click", pridejSlovo)
+        roztrid.addEventListener("click", trideni)
+
+        function pridejSlovo(){
+            predmety.push(input.value)
+            text.innerText += "-" + input.value + "\n"
+            input.value = ""
+        }
+
+        function trideni(){
+            for(let i = 0; i < predmety.length; i++){
+                if(predmety[i] === "M"){
+                    oblibene.push(predmety[i])
+                }else if(predmety[i] === "Čj"){
+                    oblibene.push(predmety[i])
+                }else{
+                    ostatni.push(predmety[i])
+                }
+            }
+            prepis()
+        }
+
+        function prepis(){
+            for(let i = 0; i < oblibene.length; i++){
+                text_oblibene.innerText += "-" + oblibene[i] + "\n"
+            }
+
+            for(let i = 0; i < ostatni.length; i++){
+                text_ostatni.innerText += "-" + ostatni[i] + "\n"
+            }
+        }
+
+
+
+    </script>
+
+</body>
+</html>

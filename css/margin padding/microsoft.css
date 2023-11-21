@@ -1,0 +1,32 @@
+
+.red {
+    display: inline-block;
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+.blue {
+    display: inline-block;
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+
+.green {
+    display: inline-block;
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    background-color: green;
+}
+
+.yellow {
+    display: inline-block;
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+}
